@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+div {
+    text-align: center;
+    background-color: rgb(193, 226, 255);
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    border: 1px solid black;
+    
+}
+div:hover {
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    
+}
+a {
+    text-decoration: none;
+    color: black;
+}

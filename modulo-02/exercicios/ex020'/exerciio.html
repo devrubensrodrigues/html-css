@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilizando hover</title>
+    <style>
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+            font-weight: normal;
+            text-align: center;
+            color: rgb(160, 160, 0);
+        }
+        .pdiv1 {
+            width: 85px;
+        }
+        .div1 {
+            font-size: 18px;
+            width: 65px;
+        }
+        .div1 > .pdiv1 {
+            display: none;
+        }
+        .div1:hover .pdiv1 {
+            display: block;
+        }
+        a {
+            color: rgb(160, 160, 0);
+            text-decoration: none;
+        }
+        a:hover {
+            color: black;
+            background-color: rgb(190, 190, 190);
+        }
+        .div2 {
+            font-size: 18px;
+            width: 65px;
+        }
+        .pdiv2 {
+            font-size: 1em;
+            display: none;
+            width: 85px;
+        }
+        .div2:hover > .pdiv2{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Utilizando o hover para criar menus</h1>
+    <p>Vamos trabalhar com hover para possibilidades que eu consigo fazer.</p>
+    <div class="div1">
+        Menu 01
+        <p class="pdiv1"><a href="#" target="_self" rel="next">Capítulo 01</a></p>
+        <p class="pdiv1"><a href="#" target="_self" rel="next">Capítulo 02</a></p>
+        <p class="pdiv1"><a href="#" target="_self" rel="next">Capítulo 03</a></p>
+    </div>
+    <div class="div2">
+        Menu 02
+        <p class="pdiv2"><a href="#" target="_self" rel="next">Capítulo 01</a></p>
+        <p class="pdiv2"><a href="#" target="_self" rel="next">Capítulo 02</a></p>
+        <p class="pdiv2"><a href="#" target="_self" rel="next">Capítulo 03</a></p>
+    </div>
+
+</body>
+</html>

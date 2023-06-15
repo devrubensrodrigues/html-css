@@ -1,0 +1,239 @@
+@charset "UTF-8";
+@font-face {
+
+    font-family: 'idroid';
+    src: url(fontes/idroid.otf) format(opentype);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Creepster&display=swap');
+
+:root {
+    --cor-de-fundo: rgb(233, 228, 191);
+    --cor0: #2FA765;
+    --cor1: #1F7F4A;
+    --cor2: #166639;
+    --cor3: #0D4F2A;
+    --cor4: #05361A;
+
+    --font-padrão: Arial, verdana, Helvetica, sans-serif;
+    --font-bebas: 'Bebas Neue', 'cursive';
+    --font-idroid: 'idroid', 'cursive';
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    margin: 0px;
+}
+
+
+
+/*Início do meu CSS header*/
+
+header {
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.453);
+    padding: 0px 0px 10px 0px;
+    margin: 0px;
+    background-image: linear-gradient( #2FA765, #1F7F4A, #166639, #0D4F2A, #05361A);
+}
+header > h1 {
+    text-shadow: 2px 1px 5px black;
+    padding: 50px 0px 0px 0px;
+    margin: 0px;
+    font-size: 48px;
+    font-family: var(--font-bebas);
+    color: white;
+    text-align: center;
+}
+header > p {
+    padding: 0px 0px 20px 0px;
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}
+nav > a {
+    padding: 10px;
+    text-align: justify;
+    margin: 0px 10px 0px 0px;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#8ce2b3;
+    text-decoration: none;
+}
+nav > a:hover {
+    padding: 10px;
+    border-radius: 5px;
+    color: #05361A;
+    background-color: #2FA765;
+}
+/*Final do meu CSS header*/
+
+
+
+/*Início do meu CSS main*/
+
+#main1 {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.448);
+    padding: 10px;
+    max-width: 1000px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+.seccorpo > h1 {
+    font-weight: normal;
+    color: black;
+    padding: 0px 0px 0px 15px;
+    font-size: 28px;
+    text-align: justify;
+    font-family: var(--font-idroid);
+}
+.seccorpo > p {
+    line-height: 2em;
+    color: black;
+    text-indent: 25px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+strong {
+    color: #05361A;
+}
+.seccorpo > h2 {
+    font-weight: normal;
+    color: black;
+    padding: 0px 0px 0px 15px;
+    font-size: 20px;
+    text-align: justify;
+    font-family: 'idroid';
+    background-image: linear-gradient(to left, #00582800, #00813a1e, #00a74861, #00e0617c, #00ff6e8a);
+}
+.seccorpo > p {
+    line-height: 2em;
+    color: black;
+    text-indent: 25px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.seccorpo > p > a {
+    background-color: #8ce2b3;
+    text-decoration: none;
+    color: #05361A;
+}
+.seccorpo > p > a:hover {
+    text-decoration: underline;
+}
+.seccorpo > p > a::after {
+    content: '\00A0\1F517';
+}
+img {
+    margin: auto;
+    display: block;
+}
+#main2 {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.448);
+    background-color: #05361A;
+    margin: auto;
+    max-width: 1020px;
+}
+iframe {
+    padding: 20px;
+    height: 540px;
+    width: 936px;
+    margin: auto;
+    display: block;
+}
+#main3 {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.448);
+    border-radius: 0px 0px 10px 10px;
+    padding: 10px;
+    background-color: white;
+    margin: auto;
+    max-width: 1000px;
+}
+#main3 > p {
+    line-height: 2em;
+    color: black;
+    text-indent: 25px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main4 {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.448);
+    border-radius: 10px;
+    text-indent: 25px;
+    padding: 0px 0px 10px 0px;
+    margin: auto;
+    max-width: 1000px;
+    background-color: #8ce2b3;
+}
+#main4 > h3 {
+    text-indent: 10px;
+    text-align: justify;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px 10px 10px 0px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: #166639;
+}
+#main4 > p {
+    line-height: 2em;
+    color: black;
+    text-indent: 25px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+#main4 > ul {
+    padding: 0px;
+    columns: 2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+li {
+    text-indent: 10px;
+}
+li::before {
+    content: '\2714\00A0\00A0';
+}
+#main4 > p > a {
+    text-decoration: none;
+    color: #05361A;
+}
+#main4 > p > a:hover {
+    text-decoration: underline;
+}
+#main4 > p > a::after {
+    content: '\00A0\1F517';
+}
+article > p {
+    line-height: 2em;
+    text-indent: 25px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Final do CSS main*/
+
+/*Início do CSS Footer*/
+
+#mainfoo > p {
+    margin: 30px 0px 0px 0px;
+    padding: 5px;
+    text-align: center;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: #05361ae5;
+}
+#mainfoo > p > a {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+#mainfoo > p > a:hover {
+    color: #2FA765;
+    text-decoration: underline;
+}
+
+/*Final do CSS Footer*/

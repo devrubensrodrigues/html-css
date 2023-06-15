@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <!--Vou utilizar a tag source media type para poder ajustar a imagem em tamanhos diferentes de resolução, vou mudar o min-width para max e coloco a proxima resoluão para caso a tela de quem vai visualizar o site. Em media='vou mudar para max e colocar o px desejado, em srcset= vou digitar o atalho para achar a imagem e o nome dela e em type= vou colocar o tipo de arquivo que estou utilizando, essa função max-width estamos trabalhando com largura da imagem.-->
+    <picture>
+        <source media="(max-width: 725px)" srcset="./imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1025px)" srcset="./imagens/foto-m.png" type="image/png">
+        <img src="./imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <!-- Tag utilizada para reprodução de áudios no site seria a tag 'audio'e dentro da tag vou utilizar a 'source:src' para poder adicionar a mídia e em 'type', vou adicionar o formato do áudio. Aqui em baixo tem auguns exemplos para formatos diferentes de áudio.-->
+    <!--Preload:Existem 3 opções de carregamento do áudio que seriam:
+    Metadata: Carrega apenas informações do áudio.
+    None: Só começa a carregar após o play do áudio ser ativado.
+    Auto: O site só terminaria de carregar após finalizar todo o download do áudio.(não recomendado).-->
+    <audio preload="metadata" autoplay controls loop>
+        <!--Controls: Para mostrar os controles de reprodução do áudio.
+        Autoplay: Para o áudio reproduzir automaticamente ao entrar no site.
+        Loop: Para que o áudio repita após finalizar-->
+        <!--Essa sequencia que colocamos as opções de áudio não é só estética, o navegador vai tentar reproduzir de acordo com a ordem, se o primeiro formato não for suportado pelo navegador, ele automaticamente vai tentar reproduzir o próximo da lista, assim sucessivamente.-->
+        <source src="midias/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midias/searching-for-time-telecasted.ogg" type="audio/ogg">
+        <source src="midias/searching-for-time-telecasted.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não reproduz áudio. Clique <a href="midias/searching-for-time-telecasted.mp3">aqui</a> para baixa-lo em mp3.</p>
+    </audio>
+</body>
+</html>

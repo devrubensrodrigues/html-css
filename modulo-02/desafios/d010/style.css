@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'nova';
+    src: url(fontes/idroid.otf)
+    format(opentype);
+    font-family: 'bebas';
+    src: url(fontes/Fontfabric-BebasNeue/Bold.ttf) format(truetype);
+}
+body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    background: #d9d1b0;
+}
+.acabeça {
+    padding: 5px;
+    margin: auto;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+.acabeça:hover {
+    color: black;
+    background-color: #84E1AD;
+    border-radius: 2px;
+}
+#cabeçalho {
+    background-image: linear-gradient(to top,rgb(57, 57, 57), #1A5C38, #25824F, #2FA966, #37C475);
+    padding: 10px 25px;
+    border: 0px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 2px;
+    color: white;
+}
+#corpo {
+    background-color: rgb(255, 255, 255);
+    max-width: 1000px;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+}
+#video {
+    background-color: #25824F;
+    max-width: 1000px;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+}
+#intrarodape {
+    background: #8cf0b7;
+    max-width: 880px;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+    border-radius: 15px;
+}
+#rodape {
+    background-color: white;
+    max-width: 1000px;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+}
+h1 {
+    font-size: 48px;
+    font-family: 'bebas';
+    text-align: center;
+}
+p {
+    text-indent: 38px;
+}
+#intraintra {
+    background: #2d9f5e;
+    max-width: 890px;
+    height: auto;
+    margin: -10px -10px -10px -10px;
+    padding: 1px 1px 1px 10px;
+    border-radius: 15px 15px 0px 0px;
+}
+.primeiro {
+    color: #1A5C38;
+    text-align: justify;
+    font-family: nova;
+    font-size: 25px;
+}
+#cabe {
+    font-weight: normal;
+    text-align: center;
+    font-size: 19px;
+}
+div {
+    display: inline-block;
+}
+.segundo {
+    color: #1A5C38;
+    font-family: 'nova';
+    font-size: 20px;
+    background-image: linear-gradient(to right, #1a5c386c, #25824F6c, #2fa96647, #37c47418, #84e1ac00);
+}
+#especial {
+    color: white;
+    font-size: 1em;
+}
+strong {
+    color: #25824F;
+}
+li::before {
+    content: '✔ ';
+}
+.atexto {
+    text-decoration: none;
+    background-color: #7ae9aa;
+    color: #25824f;
+    font-weight: bold;
+}
+.atexto:hover {
+    text-decoration: underline;
+}
+.atexto::before {
+    contain: ' ✔';
+}
+#aespecial {
+    font-weight: bold;
+    color: #25824f;
+    background-color: transparent;
+    text-decoration: none;
+}
+#aespecial:hover {
+    text-decoration: underline;
+    background-color: #37C475;
+}
+#creditos {
+    border-radius: 2px;
+    text-align: center;
+    color: white;
+    background-color: #1A5C38;
+    padding: 1px;
+    margin: 0px -10px -10px -10px;
+}
+.acreditos {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.acreditos:hover {
+    color: #2FA966;
+    text-decoration: underline;
+}
+img {
+    display: block;
+    margin: auto;
+}
+iframe {
+    margin: auto;
+    display: block;
+}

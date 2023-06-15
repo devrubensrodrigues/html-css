@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 01</title>
+    <style>
+        h1 {
+            font-size: 2em;
+            font-style: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: normal;
+        }
+        div > p {
+            display: none;
+        }
+        div:hover {
+            color: red;
+        }
+        div:hover > p {
+            display: block;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+        a:hover {
+            background-color: rgb(125, 125, 125);
+        }
+    </style>
+</head>
+<body>
+    <h1>Este é o capítulo 01</h1>
+    <p>capítulo 01</p>
+    <div>
+        Capítulos
+        <p><a href="cap01.html" target="_self" rel="next">Capítulo 01</a></p>
+        <p><a href="#" target="_self" rel="next">Capítulo 02</a></p>
+        <p><a href="#" target="_self" rel="next">Capítulo 03</a></p>
+        <p><a href="exemplo.html">Home</a></p>
+    </div>
+</body>
+</html>

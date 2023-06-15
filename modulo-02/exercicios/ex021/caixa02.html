@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tag</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 2px 20px;
+        }
+        h1 {
+            box-shadow: 2px 2px 4px rgb(0, 0, 0, 0.712);
+        }
+        nav {
+            background-color: rgb(106, 106, 106);
+            padding: 3px;
+            box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.712);
+        }
+        nav > a {
+            margin: 3px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        nav a:hover {
+            color: black;
+            text-decoration: underline;
+            background-color: white;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px 10px 0px 10px;
+            border-radius: 2px 20px;
+        }
+        article {
+            background-color: lightgray;
+            padding: 3px;
+            margin: 5px 8px 8px 8px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.504);
+        }
+        article > aside {
+            background-color: rgb(136, 136, 136);
+            padding: 2px;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px 0px 100px 0px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+        aside > p {
+            margin: 0px;
+            padding: 1px;
+        }
+        p > a {
+            color: white;
+            text-decoration: none;
+        }
+        p > a:hover {
+            color: gray;
+            text-decoration: underline;
+        }
+        #bola {
+            height: 100px;
+            width: 100px;
+            margin: auto;
+            background-color: white;
+            border-radius: 50%;
+            box-shadow: inset 12px -11px 16px 4px rgba(0, 0, 0, 0.871);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+    <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <article>
+                <h2>Esportes Políticas Tecnolias</h2>
+            </article>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, distinctio! Ab praesentium explicabo facere nisi neque sint est nostrum obcaecati, corporis non nulla modi. Vero expedita quos odit unde officiis?</p>
+                <aside>
+                    <p>Artigo escrito para José da Silva</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo <a href="#">Cursoemvide</a></p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

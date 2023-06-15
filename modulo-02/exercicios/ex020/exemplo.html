@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo de menu com div</title>
+    <style>
+        h1 {
+            font-size: 2em;
+            font-style: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: normal;
+        }
+        div {
+            width: 65px;
+        }
+        div > p {
+            display: none;
+            width: 80px;
+        }
+        div:hover {
+            color: red;
+        }
+        div:hover > p {
+            display: block;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+        a:hover {
+            background-color: rgb(125, 125, 125);
+        }
+    </style>
+</head>
+<body>
+    <h1>Desenvolvedor web</h1>
+    <div>
+        Capítulos
+        <p><a href="cap01.html" target="_self" rel="next">Capítulo 01</a></p>
+        <p><a href="#" target="_self" rel="next">Capítulo 02</a></p>
+        <p><a href="#" target="_self" rel="next">Capítulo 03</a></p>
+    </div>
+</body>
+</html>

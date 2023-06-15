@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links externos</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!--SEO: significa Search Engine Optimization (otimização para mecanismos de busca). E um conjunto de estratégias e técnicas de otimização para sites, blogs e páginas na web com o objetivo de melhorar o posicionamento organico em buscadores como o Google ao gerar tráfego e autoridade digiatl-->
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">repositório público no GitHub</a></p>
+    <!--Complementando a tag <a> com 'target=_blank' e 'rel=external' esses dois complementos servem para os links que voce coloca para acessar no seu sites, ela não sobrepõe o seu site e abre em outra aba, mantendo sua página aberta.-->
+    <p>Voce também pode acessar o meu <a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external">canal gratuito do youtube</a>.</p>
+    <!--Nesse caso o target usado foi '_self' para indicar que a pagina que ira ser redirecionado ainda é dentro do seu site. E o 'rel=next' para mostrar internamente para o algoritimo identificar que a pagina que vai ser acessada é uma pagina para frente no caso a proxima pagina.-->
+    <h1>Usando links internos</h1>
+    <p>Esta é a primeira página do site. Se voce quiser, pode acessar também a minha <a href="pag02.html" target="_self" rel="next">segunda página.</a></p>
+    <!--Quando estou navegando dentro do meu próprio site, eu preciso localizar onde as páginas estão para poder acessalas, no caso selecionando o docmento atravez do ctrl+barra de espaço.-->
+    <h2>Lista para estudos</h2>
+    <p><a href="Lista de sites para estudos.html" target="_self" rel="next">Lista para estudos</a></p>
+    <!--Para acessar documentos que estão em outra pasta porém esta dentro da pasta 'principal' após as teclas de atalho ctrl+barra de espaço a pasta vai aparecer e vai precisar abrir ela para achar o documento.-->
+    <p>Voce também pode acessar a nossa <a href="noticias/pag03.html" target="_self" rel="next">página de notícias.</a></p>
+    <!--Da mesma forma que um link, eu precisa localizar o documento na pasta em que o ele está, após o link do documento eu escrevo 'download='nome do arquivo e escrevo o tipo do arquivo, no casa do exemplo a baixo eu coloco, type='application/pdf.'-->
+    <h1>Links para download</h1>
+    <ul type="square">
+        <li><a href="livro/01 - História da Internet.pdf" download="01 - História da Internet.pdf" type="application/pdf">Baixar livro em pdf.</a></li>
+        <li><a href="livro/01 - História da Internet.zip" download="01 - História da Internet.zip" type="application/zip">Livro compactado em ZIP.</a></li>
+    </ul>
+    <h1>Lista de Medias Types</h1>
+    <!--Link para a lista de Media Types, para saber o que escrever dentro do atributo type de uma âncora de um hypertext.-->
+    <ul type="square">
+        <li><p>Lista de <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="external">Media Types</a> </p></li>
+    </ul>
+</body>
+</html>
